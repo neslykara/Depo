@@ -2,7 +2,9 @@ package depo;
 
 public class Urun
 {
-   private int id;
+
+   private static int counter = 1000;
+   private String id;
    private String urunIsmi;
    private String uretici;
    private int miktar;
@@ -12,7 +14,7 @@ public class Urun
    //Constructor
 
 
-    public Urun(int id, String urunIsmi, String uretici, int miktar, String birim, String raf)
+    public Urun(String id, String urunIsmi, String uretici, int miktar, String birim, String raf)
     {
         this.id = id;
         this.urunIsmi = urunIsmi;
@@ -21,13 +23,21 @@ public class Urun
         this.birim = birim;
         this.raf = raf;
     }
-
     //getter - setter
-    public int getId() {
+    public static int getCounter() {
+        return counter;
+    }
+
+    public static void setCounter(int counter) {
+        Urun.counter = counter;
+    }
+
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

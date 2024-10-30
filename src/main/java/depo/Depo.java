@@ -31,19 +31,29 @@ public class Depo
             if (select == 1){
 
                 urunService.urunTanimlama();
+                System.out.println("1- ANA MENÜ");
+                int devam = scan.nextInt();
 
             } else if (select == 2) {
 
                 urunService.urunListele(urunService.urunler);
+                System.out.println("1- ANA MENU");
+                int devam = scan.nextInt();
 
             } else if (select == 3) {
                 urunService.urunGirisi(urunService.urunler);
+                System.out.println("1- ANA MENÜ");
+                int devam = scan.nextInt();
 
             } else if (select == 4) {
                 urunService.urunRafaKoy(urunService.urunler);
+                System.out.println("1- ANA MENÜ");
+                int devam = scan.nextInt();
 
             } else if (select == 5) {
                 urunService.urunCikisi(urunService.urunler);
+                System.out.println("1- ANA MENÜ");
+                int devam = scan.nextInt();
 
             } else if (select == 0) {
                 System.out.println("Güvenli çıkısınız saglanıyor...\n İYİ GÜNLER DİLERİZ.");
